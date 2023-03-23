@@ -38,8 +38,14 @@ function App() {
     } else if (value === 'delete') {
       setIp(ip.slice(0, -1));
     } else if (value === '=') {
-      setResult(eval(ip));
-    }  else if (value) {
+      let expression = ip;
+      if (expression.includes('%')) {
+        const [percentageValue, operationValue] = expression.split('%');
+        expression = parseFloat(percentageValue) / 100 * operationValue;
+      }
+
+      setResult(eval(expression));
+    } else if (value) {
       console.log("handleOnClick", value)
       setIp(ip + e.target.getAttribute('value'));
     }
