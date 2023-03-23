@@ -87,3 +87,10 @@ span:hover{
   cursor: pointer;
   transform: scale(1.1);
 }
+
+@media screen and (min-width: 769px) {
+  .container{
+    width: 50vw;
+    height: 75vh;
+  }
+}
