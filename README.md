@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## DEMO
-[Visit DEMO](https://muneebgulzar.github.io/calculator-v2/).
+[Visit DEMO](https://muneebgulzar.github.io/calculator-v2/)
 
 ## Available Scripts
 
