@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  /* user-select: none; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: lightgray; */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 90vw;
+  height: 75vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 1rem;
+  /* border: .3rem solid #000; */
+  border-radius: 1rem;
 }
-
-.App-link {
-  color: #61dafb;
+.input-container{
+  width: 100%;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #000; */
+  border-radius: .5rem;
+  border: 0.3 solid #fff;
+  box-shadow: 0 0 .5rem #a09fa7 inset ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-container div{
+  color: #000;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  align-items: center;
+}
+.input{
+  height: 70%;
+  /* background-color: green; */
+  font-size: 2.5rem;
+}
+.result{
+  height: 30%;
+  font-size: 1.8rem;
+  /* background-color: rebeccapurple; */
+}
+.btn-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 8;
+  /* background-color: red; */
+  gap: 3%;
+  /* padding: 1rem; */
+}
+.btn-container span{
+  width: 22%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: .5rem;
+  transition-duration: .3s;
+}
+.btn{
+  box-shadow: 0 0 .5rem #ceced3 inset;
+}
+.op{
+  background-color: #000;
+  color: #fff;
+}
+span:hover{
+  cursor: pointer;
+  transform: scale(1.1);
 }
