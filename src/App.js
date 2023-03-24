@@ -44,7 +44,7 @@ function App() {
         expression = parseFloat(percentageValue) / 100 * operationValue;
       }
 
-      setResult(eval(expression));
+      setResult(Number(eval(expression).toFixed(2)));
     } else if (value) {
       console.log("handleOnClick", value)
       setIp(ip + e.target.getAttribute('value'));
